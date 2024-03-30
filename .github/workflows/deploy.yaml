@@ -23,6 +23,10 @@ jobs:
           # 选择要使用的 node 版本
           node-version: 20
 
+      # 安装依赖
+      - name: install
+        run: npm install
+      
       # 运行构建脚本
       - name: build
         run: npm run build
